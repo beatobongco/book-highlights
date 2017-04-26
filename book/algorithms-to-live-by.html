@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algorithms to Live By by Brian Christian - Highlights and Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../book.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56608851-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+<div class="controls">
+  <a href="../"><< Back</a>
+</div>
+<div id="raw-notes">
+  Notebook for
+  Algorithms to Live By: The Computer Science of Human Decisions
+  Christian, Brian
+  Citation (APA): Christian, B. (2016). Algorithms to Live By: The Computer Science of Human Decisions [Kindle Android version]. Retrieved from Amazon.com
+  Introduction: Algorithms to Live By
+  Highlight (yellow) - Page 2
+  If you want the best odds of getting the best apartment, spend 37% of your apartment hunt (eleven days, if you’ve given yourself a month for the search) noncommittally exploring options.
+  Highlight (yellow) - Page 2
+  We know this because finding an apartment belongs to a class of mathematical problems known as “optimal stopping” problems.
+  Highlight (yellow) - Page 4
+  Optimal stopping tells us when to look and when to leap. The explore/exploit tradeoff tells us how to find the balance between trying new things and enjoying our favorites. Sorting theory tells us how (and whether) to arrange our offices. Caching theory tells us how to fill our closets. Scheduling theory tells us how to fill our time.
+  Highlight (yellow) - Page 5
+  tackling real-world tasks requires being comfortable with chance, trading off time with accuracy, and using approximations.
+  1. Optimal Stopping: When to Stop Looking
+  Highlight (yellow) - Page 13
+  Look-Then-Leap Rule: You set a predetermined amount of time for “looking”—that is, exploring your options, gathering data—in which you categorically don’t choose anyone, no matter how impressive. After that point, you enter the “leap” phase, prepared to instantly commit to anyone who outshines the best applicant you saw in the look phase.
+  Highlight (yellow) - Page 14
+  37% Rule: look at the first 37% of the applicants,* choosing none, then be ready to leap for anyone better than all those you’ve seen so far.
+  Highlight (yellow) - Page 18
+  when there are a lot of applicants left in the pool, you should pass up even a very good applicant in the hopes of finding someone still better than that
+  Highlight (yellow) - Page 19
+  you should choose the third-to-last applicant if she’s above the 69th percentile, the fourth-to-last applicant if she’s above the 78th, and so on, being more choosy the more applicants are left. No matter what, never hire someone who’s below average unless you’re totally out of options.
+  Highlight (yellow) - Page 20
+  Optimal stopping thresholds in the full-information secretary problem.
+  Highlight (yellow) - Page 20
+  Any yardstick that provides full information on where an applicant stands relative to the population at large will change the solution from the Look-Then-Leap Rule to the Threshold Rule and will dramatically boost your chances of finding the single best applicant in the group.
+  Highlight (yellow) - Page 29
+  Most people acted in a way that was consistent with the Look-Then-Leap Rule, but they leapt sooner than they should have more than four-fifths of the time.
+  Highlight (yellow) - Page 30
+  Intuitively, we think that rational decision-making means exhaustively enumerating our options, weighing each one carefully, and then selecting the best. But in practice, when the clock—or the ticker—is ticking, few aspects of decision-making (or of thinking more generally) are as important as this one: when to stop.
+  2. Explore/Exploit: The Latest vs. the Greatest
+  Highlight (yellow) - Page 34
+  When balancing favorite experiences and new ones, nothing matters as much as the interval over which we plan to enjoy them
+  Highlight (yellow) - Page 34
+  A sobering property of trying new things is that the value of exploration, of finding a new favorite, can only go down over time, as the remaining opportunities to savor it dwindle.
+  Highlight (yellow) - Page 35
+  explore when you will have time to use the resulting knowledge, exploit when you’re ready to cash in. The interval makes the strategy.
+  Highlight (yellow) - Page 35
+  By entering an almost purely exploit-focused phase, the film industry seems to be signaling a belief that it is near the end of its interval.
+  Highlight (yellow) - Page 36
+  Win-Stay, Lose-Shift algorithm: choose an arm at random, and keep pulling it as long as it keeps paying off. If the arm doesn’t pay off after a particular pull, then switch to the other one. Although this simple strategy is far from a complete solution, Robbins proved in 1952 that it performs reliably better than chance.
+  Highlight (yellow) - Page 41
+  Exploration in itself has value, since trying new things increases our chances of finding the best. So taking the future into account, rather than focusing just on the present, drives us toward novelty.
+  Highlight (yellow) - Page 43
+  “regret minimization framework.” So I wanted to project myself forward to age 80 and say, “Okay, now I’m looking back on my life. I want to have minimized the number of regrets I have.”
+  Highlight (yellow) - Page 43
+  your total amount of regret will probably never stop increasing, even if you pick the best possible strategy—because even the best strategy isn’t perfect every time.
+  Highlight (yellow) - Page 43
+  regret will increase at a slower rate if you pick the best strategy than if you pick others; what’s more, with a good strategy regret’s rate of growth will go down over time, as you learn more about the problem and are able to make better choices. Third, and most specifically, the minimum possible regret—again assuming non-omniscience—is regret that increases at a logarithmic rate with every pull of the handle.
+  Highlight (yellow) - Page 45
+  Following the advice of these algorithms, you should be excited to meet new people and try new things—to assume the best about them, in the absence of evidence to the contrary. In the long run, optimism is the best prevention for regret.
+  Highlight (yellow) - Page 45
+  $57 million of additional donations were raised as a direct result of his work. What exactly did he do to that button? He A/B tested it.
+  Highlight (yellow) - Page 54
+  If the probabilities of a payoff on the different arms change over time—what has been termed a “restless bandit”—the problem becomes much harder. (So much harder, in fact, that there’s no tractable algorithm for completely solving it, and it’s believed there never will be.)
+  Highlight (yellow) - Page 54
+  To live in a restless world requires a certain restlessness in oneself. So long as things continue to change, you must never fully cease exploring.
+  Highlight (yellow) - Page 54
+  Strategies like the Gittins index and Upper Confidence Bound provide reasonably good approximate solutions and rules of thumb, particularly if payoffs don’t change very much over time.
+  Highlight (yellow) - Page 58
+  Perhaps the deepest insight that comes from thinking about later life as a chance to exploit knowledge acquired over decades is this: life should get better over time. What an explorer trades off for knowledge is pleasure.
+  3. Sorting: Making Order
+  Highlight (yellow) - Page 61
+  We refer to things like Google and Bing as “search engines,” but that is something of a misnomer: they’re really sort engines.
+  Highlight (yellow) - Page 61
+  The truncated top of an immense, sorted list is in many ways the universal user interface.
+  Highlight (yellow) - Page 62
+  This is the first and most fundamental insight of sorting theory. Scale hurts.
+  Highlight (yellow) - Page 68
+  “Mergesort is as important in the history of sorting as sorting in the history of computing.”
+  Highlight (yellow) - Page 72
+  Sorting something that you will never search is a complete waste; searching something you never sorted is merely inefficient.
+  Highlight (yellow) - Page 79
+  Comparison Counting Sort operates exactly like a Round-Robin tournament. In other words, it strongly resembles a sports team’s regular season—playing every other team in the division and building up a win-loss record by which they are ranked. That Comparison Counting Sort is the single most robust sorting algorithm known, quadratic or better, should offer something very specific to sports fans: if your team doesn’t make the playoffs, don’t whine.
+  Highlight (yellow) - Page 81
+  the number of hostile confrontations encountered by each individual will grow substantially—at least logarithmically, and perhaps quadratically—as the group gets bigger.
+  Highlight (yellow) - Page 82
+  Having a benchmark—any benchmark—solves the computational problem of scaling up a sort.
+  Highlight (yellow) - Page 82
+  In Silicon Valley, for instance, there’s an adage about meetings: “You go to the money, the money doesn’t come to you.”
+  4. Caching: Forget About It
+  Highlight (yellow) - Page 84
+  In the practical use of our intellect, forgetting is as important a function as remembering.
+  Highlight (yellow) - Page 88
+  Depend upon it there comes a time when for every addition of knowledge you forget something that you knew before. It is of the highest importance, therefore, not to have useless facts elbowing out the useful ones. —SHERLOCK HOLMES
+  Highlight (yellow) - Page 88
+  the goal of cache management is to minimize the number of times you can’t find what you’re looking for in the cache and must go to the slower main memory to find it; these are known as “page faults” or “cache misses.”
+  Highlight (yellow) - Page 89
+  LRU consistently performed the closest to clairvoyance.
+  Highlight (yellow) - Page 89
+  “temporal locality”: if a program has called for a particular piece of information once, it’s likely to do so again in the near future.
+  Highlight (yellow) - Page 90
+  The windows on your computer screen have what’s called a “Z-order,” a simulated depth that determines which programs are overlaid on top of which. The least recently used end up at the bottom.
+  Highlight (yellow) - Page 90
+  LRU itself—and minor tweaks thereof—is the overwhelming favorite of computer scientists, and is used in a wide variety of deployed applications at a variety of scales. LRU teaches us that the next thing we can expect to need is the last one we needed, while the thing we’ll need after that is probably the second-most-recent one. And the last thing we can expect to need is the one we’ve already gone longest without.
+  Highlight (yellow) - Page 90
+  Unless we have good reason to think otherwise, it seems that our best guide to the future is a mirror image of the past. The nearest thing to clairvoyance is to assume that history repeats itself—backward.
+  Highlight (yellow) - Page 94
+  “anticipatory package shipping,” which the press seized upon as though Amazon could somehow mail you something before you bought it. Amazon, like any technology company, would love to have that kind of Bélády-like clairvoyance—but for the next best thing, it turns to caching. Their patent is actually for shipping items that have been recently popular in a given region to a staging warehouse in that region—like having their own CDN for physical goods.
+  Highlight (yellow) - Page 95
+  when you are deciding what to keep and what to throw away, LRU is potentially a good principle to use
+  Highlight (yellow) - Page 95
+  exploit geography. Make sure things are in whatever cache is closest to the place where they’re typically used.
+  Highlight (yellow) - Page 101
+  In any system responsible for managing a vast data base there must be failures of retrieval. It is just too expensive to maintain access to an unbounded number of items.”
+  Highlight (yellow) - Page 104
+  We say “brain fart” when we should really say “cache miss.”
+  5. Scheduling: First Things First
+  Highlight (yellow) - Page 105
+  How we spend our days is, of course, how we spend our lives.
+  Highlight (yellow) - Page 105
+  “We are what we repeatedly do,” you seem to recall Aristotle saying—
+  Highlight (yellow) - Page 119
+  each time a new piece of work comes in, divide its importance by the amount of time it will take to complete. If that figure is higher than for the task you’re currently doing, switch to the new one; otherwise stick with the current task. This algorithm is the closest thing that scheduling theory has to a skeleton key or Swiss Army knife, the optimal strategy not just for one flavor of problem but for many.
+  Highlight (yellow) - Page 126
+  “interrupt coalescing.” If you have five credit card bills, for instance, don’t pay them as they arrive; take care of them all in one go when the fifth bill comes.
+  Highlight (yellow) - Page 127
+  In academia, holding office hours is a way of coalescing interruptions from students. And in the private sector, interrupt coalescing offers a redemptive view of one of the most maligned office rituals: the weekly meeting. Whatever their drawbacks, regularly scheduled meetings are one of our best defenses against the spontaneous interruption and the unplanned context switch.
+  Highlight (yellow) - Page 127
+  Perhaps the patron saint of the minimal-context-switching lifestyle is the legendary programmer Donald Knuth. “I do one thing at a time,” he says. “This is what computer scientists call batch processing—the alternative is swapping in and out. I don’t swap in and out.”
+  Highlight (yellow) - Page 127
+  we might agitate for settings that would provide an explicit option for interrupt coalescing—the same thing at a human timescale that the devices are doing internally. Alert me only once every ten minutes, say; then tell me everything.
+  6. Bayes’s Rule: Predicting the Future
+  Highlight (yellow) - Page 135
+  More generally, unless we know better we can expect to have shown up precisely halfway into the duration of any given phenomenon.*
+  Highlight (yellow) - Page 135
+  the relationship your friend began a month ago will probably last about another month (maybe tell him not to RSVP to that wedding invitation just yet).
+  Highlight (yellow) - Page 148
+  If you want to be a good intuitive Bayesian—if you want to naturally make good predictions, without having to think about what kind of prediction rule is appropriate—you need to protect your priors. Counterintuitively, that might mean turning off the news.
+  7. Overfitting: When to Think Less
+  Highlight (yellow) - Page 149
+  If I find a Reason pro equal to some two Reasons con, I strike out the three. If I judge some two Reasons con equal to some three Reasons pro, I strike out the five; and thus proceeding I find at length where the Ballance lies; and if after a Day or two of farther Consideration nothing new that is of Importance occurs on either side, I come to a Determination accordingly.
+  Highlight (yellow) - Page 151
+  Moral or Prudential Algebra
+  Highlight (yellow) - Page 153
+  (They believe, incidentally, that it simply reflects a return to normalcy—to people’s baseline level of satisfaction with their lives—rather than any displeasure with marriage itself.
+  Highlight (yellow) - Page 153
+  it is indeed true that including more factors in a model will always, by definition, make it a better fit for the data we have already. But a better fit for the available data does not necessarily mean a better prediction.
+  Note - Page 154
+  This is why simple, equally weighted factors are better e.g. Thinking fast and slow interview
+  Highlight (yellow) - Page 155
+  This is what statisticians call overfitting.
+  Note - Page 155
+  Some people overfit. Factor in too many and start seeing outcomes not grounded in reality (too positive too negative). Best is to factor in the important ones just right.
+  Highlight (yellow) - Page 159
+  Cross-Validation means assessing not only how well a model fits the data it’s given, but how well it generalizes to data it hasn’t seen. Paradoxically, this may involve using less data.
+  Highlight (yellow) - Page 159
+  In the marriage example, we might “hold back,” say, two points at random, and fit our models only to the other eight. We’d then take those two test points and use them to gauge how well our various functions generalize beyond the eight “training” points they’ve been given. The two held-back points function as canaries in the coal mine: if a complex model nails the eight training points but wildly misses the two test points, it’s a good bet that overfitting is at work.
+  Highlight (yellow) - Page 159
+  the use of proxy metrics—taste as a proxy for nutrition, number of cases solved as a proxy for investigator diligence—can also lead to overfitting.
+  Highlight (yellow) - Page 161
+  Russian mathematician Andrey Tikhonov proposed one answer: introduce an additional term to your calculations that penalizes more complex solutions. If we introduce a complexity penalty, then more complex models need to do not merely a better job but a significantly better job of explaining the data to justify their greater complexity. Computer scientists refer to this principle—using constraints that penalize models for their complexity—as Regularization.
+  Highlight (yellow) - Page 161
+  One algorithm, discovered in 1996 by biostatistician Robert Tibshirani, is called the Lasso and uses as its penalty the total weight of the different factors in the model.
+  Highlight (yellow) - Page 163
+  “In contrast to the widely held view that less processing reduces accuracy,” they write, “the study of heuristics shows that less information, computation, and time can in fact improve accuracy.”
+  Highlight (yellow) - Page 163
+  A heuristic that favors simpler answers—with fewer factors, or less computation—offers precisely these “less is more” effects.
+  Highlight (yellow) - Page 165
+  As a species, being constrained by the past makes us less perfectly adjusted to the present we know but helps keep us robust for the future we don’t.
+  Highlight (yellow) - Page 166
+  where more time means more complexity—characterizes a lot of human endeavors. Giving yourself more time to decide about something does not necessarily mean that you’ll make a better decision. But it does guarantee that you’ll end up considering more factors, more hypotheticals, more pros and cons, and thus risk overfitting.
+  Highlight (yellow) - Page 166
+  Those extra hours, it turned out, had been spent nailing down nitty-gritty details that only confused the students, and wound up getting cut from the lectures the next time Tom taught the class. The underlying issue, Tom eventually realized, was that he’d been using his own taste and judgment as a kind of proxy metric for his students’. This proxy metric worked reasonably well as an approximation, but it wasn’t worth overfitting—which explained why spending extra hours painstakingly “perfecting” all the slides had been counterproductive.
+  Highlight (yellow) - Page 166
+  The effectiveness of regularization in all kinds of machine-learning tasks suggests that we can make better decisions by deliberately thinking and doing less. If the factors we come up with first are likely to be the most important ones, then beyond a certain point thinking more about a problem is not only going to be a waste of time and effort—it will lead us to worse solutions. Early Stopping provides the foundation for a reasoned argument against reasoning, the thinking person’s case against thought.
+  Highlight (yellow) - Page 167
+  If you have high uncertainty and limited data, then do stop early by all means. If you don’t have a clear read on how your work will be evaluated, and by whom, then it’s not worth the extra time to make it perfect with respect to your own (or anyone else’s) idiosyncratic guess at what perfection might be. The greater the uncertainty, the bigger the gap between what you can measure and what matters, the more you should watch out for overfitting—that is, the more you should prefer simplicity, and the earlier you should stop.
+  Highlight (yellow) - Page 167
+  When we start designing something, we sketch out ideas with a big, thick Sharpie marker, instead of a ball-point pen. Why? Pen points are too fine. They’re too high-resolution. They encourage you to worry about things that you shouldn’t worry about yet, like perfecting the shading or whether to use a dotted or dashed line. You end up focusing on things that should still be out of focus. A Sharpie makes it impossible to drill down that deep. You can only draw shapes, lines, and boxes. That’s good. The big picture is all you should be worrying about in the beginning.
+  Highlight (yellow) - Page 168
+  Darwin made up his mind exactly when his notes reached the bottom of the diary sheet. He was regularizing to the page. This is reminiscent of both Early Stopping and the Lasso: anything that doesn’t make the page doesn’t make the decision.
+  8. Relaxation: Let It Slide
+  Highlight (yellow) - Page 173
+  When somebody tells you to relax, it’s probably because you’re uptight—making a bigger deal of things than you should.
+  Highlight (yellow) - Page 173
+  Constraint Relaxation. In this technique, researchers remove some of the problem’s constraints and set about solving the problem they wish they had. Then, after they’ve made a certain amount of headway, they try to add the constraints back in. That is, they make the problem temporarily easier to handle before bringing it back to reality.
+  Note - Page 174
+  The principle of substitution in Thinking Fast and Slow. It works but add in the constraints again later. Ask, what question am I really answering?
+  Highlight (yellow) - Page 174
+  you can relax the traveling salesman problem by letting the salesman visit the same town more than once, and letting him retrace his steps for free. Finding the shortest route under these looser rules produces what’s called the “minimum spanning tree.”
+  Highlight (yellow) - Page 175
+  If you can’t solve the problem in front of you, solve an easier version of it—and then see if that solution offers you a starting point, or a beacon, in the full-blown problem.
+  Highlight (yellow) - Page 175
+  if we’re willing to accept solutions that are close enough, then even some of the hairiest problems around can be tamed with the right techniques.
+  Highlight (yellow) - Page 178
+  Lagrangian Relaxation, we take some of the problem’s constraints and bake them into the scoring system instead. That is, we take the impossible and downgrade it to costly. (In a wedding seating optimization, for instance, we might relax the constraint that tables each hold ten people max, allowing overfull tables but with some kind of elbow-room penalty.) When an optimization problem’s constraints say “Do it, or else!,” Lagrangian Relaxation replies, “Or else what?” Once we can color outside the lines—even just a little bit, and even at a steep cost—problems become tractable that weren’t tractable before.
+  Highlight (yellow) - Page 180
+  Lagrangian Relaxation—where some impossibilities are downgraded to penalties, the inconceivable to the undesirable—enables progress to be made.
+  Highlight (yellow) - Page 180
+  Constraint Relaxation, simply removes some constraints altogether and makes progress on a looser form of the problem before coming back to reality. The second, Continuous Relaxation, turns discrete or binary choices into continua: when deciding between iced tea and lemonade, first imagine a 50–50 “Arnold Palmer” blend and then round it up or down. The third, Lagrangian Relaxation, turns impossibilities into mere penalties, teaching the art of bending the rules (or breaking them and accepting the consequences).
+  9. Randomness: When to Leave It to Chance
+  Highlight (yellow) - Page 186
+  With big enough primes—say, a thousand digits—the multiplication can be done in a fraction of a second while the factoring could take literally millions of years; this makes for what is known as a “one-way function.”
+  Highlight (yellow) - Page 188
+  The Miller-Rabin primality test, as it’s now known, provides a way to quickly identify even gigantic prime numbers with an arbitrary degree of certainty.
+  Highlight (yellow) - Page 190
+  MIT’s Scott Aaronson says he’s surprised that computer scientists haven’t yet had more influence on philosophy. Part of the reason, he suspects, is just their “failure to communicate what they can add to philosophy’s conceptual arsenal.”
+  Highlight (yellow) - Page 193
+  At once it struck me what quality went to form a Man of Achievement, especially in Literature, and which Shakespeare possessed so enormously—I mean Negative Capability, that is, when a man is capable of being in uncertainties, mysteries, doubts, without any irritable reaching after fact and reason. —JOHN KEATS
+  Highlight (yellow) - Page 194
+  If you’re willing to tolerate an error rate of just 1% or 2%, storing your findings in a probabilistic data structure like a Bloom filter will save you significant amounts of both time and space.
+  Highlight (yellow) - Page 195
+  You may have found only a so-called “local maximum,” not the global maximum of all the possibilities. The hill-climbing landscape is a misty one. You can know that you’re standing on a mountaintop because the ground falls away in all directions—but there might be a higher mountain just across the next valley, hidden behind clouds.
+  Highlight (yellow) - Page 197
+  Another approach is to completely scramble our solution when we reach a local maximum, and start Hill Climbing anew from this random new starting point. This algorithm is known, appropriately enough, as “Random-Restart Hill Climbing”—or, more colorfully, as “Shotgun Hill Climbing.” It’s a strategy that proves very effective when there are lots of local maxima in a problem.
+  Highlight (yellow) - Page 197
+  The Metropolis Algorithm is like Hill Climbing, trying out different small-scale tweaks on a solution, but with one important difference: at any given point, it will potentially accept bad tweaks as well as good ones.
+  Highlight (yellow) - Page 199
+  Taking the ten-city vacation problem from above, we could start at a “high temperature” by picking our starting itinerary entirely at random, plucking one out of the whole space of possible solutions regardless of price. Then we can start to slowly “cool down” our search by rolling a die whenever we are considering a tweak to the city sequence. Taking a superior variation always makes sense, but we would only take inferior ones when the die shows, say, a 2 or more. After a while, we’d cool it further by only taking a higher-price change if the die shows a 3 or greater—then 4, then 5. Eventually we’d be mostly hill climbing, making the inferior move just occasionally when the die shows a 6. Finally we’d start going only uphill, and stop when we reached the next local max. This approach, called Simulated Annealing,
+  Highlight (yellow) - Page 201
+  The Three Princes of Serendip (Serendip being the archaic name of Sri Lanka), who “were always making discoveries, by accidents and sagacity, of things they were not in quest of.”
+  Highlight (yellow) - Page 202
+  James thus viewed randomness as the heart of creativity. And he believed it was magnified in the most creative people. In their presence, he wrote, “we seem suddenly introduced into a seething caldron of ideas, where everything is fizzling and bobbing about in a state of bewildering activity, where partnerships can be joined or loosened in an instant, treadmill routine is unknown, and the unexpected seems the only law.”
+  Highlight (yellow) - Page 202
+  “Blind Variation and Selective Retention in Creative Thought as in Other Knowledge Processes.” Like James, he opened with his central thesis: “A blind-variation-and-selective-retention process is fundamental to all inductive achievements, to all genuine increases in knowledge, to all increases in fit of system to environment.”
+  Highlight (yellow) - Page 202
+  creative innovation as the outcome of new ideas being generated randomly and astute human minds retaining the best of those ideas.
+  Highlight (yellow) - Page 202
+  “thus are to be explained the statements of Newton, Mozart, Richard Wagner, and others, when they say that thought, melodies, and harmonies had poured in upon them, and that they had simply retained the right ones.”
+  Note - Page 202
+  Argument of variation in life leading to more creativity. Routines are good but in small amounts only I think. To be creative, read and study widely. Specialize yes, but devote time to exploring unrelated stuff.
+  Highlight (yellow) - Page 202
+  musician Brian Eno and artist Peter Schmidt created a deck of cards known as Oblique Strategies for solving creative problems. Pick a card, any card, and you will get a random new perspective on your project. (And if that sounds like too much work, you can now download an app that will pick a card for you.)
+  Highlight (yellow) - Page 203
+  you’re not a band in a studio focused on one song, but you’re people who are alive and in the world and aware of a lot of other things as well.
+  Highlight (yellow) - Page 203
+  Being randomly jittered, thrown out of the frame and focused on a larger scale, provides a way to leave what might be locally good and get back to the pursuit of what might be globally optimal.
+  Highlight (yellow) - Page 204
+  Hill Climbing: even if you’re in the habit of sometimes acting on bad ideas, you should always act on good ones. Second, from the Metropolis Algorithm: your likelihood of following a bad idea should be inversely proportional to how bad an idea it is. Third, from Simulated Annealing: you should front-load randomness, rapidly cooling out of a totally random state, using ever less and less randomness as time goes on, lingering longest as you approach freezing.
+  Note - Page 204
+  1. Have lots of ideas. Use the good ones. 2. Sometimes act on bad ideas, but not stupid ones (broken leg) 3. Start random and wide then become focused when you know what you like.
+  10. Networking: How We Connect
+  Highlight (yellow) - Page 206
+  It was October 29, 1969, and Charley Kline at UCLA sent to Bill Duvall at the Stanford Research Institute the first message ever transmitted from one computer to another via the ARPANET. The message was “login”—or would have been, had the receiving machine not crashed after “lo.” Lo—verily, Kline managed to sound portentous and Old Testament despite himself.
+  Highlight (yellow) - Page 206
+  The foundation of human connection is protocol—a shared convention of procedures and expectations, from handshakes and hellos to etiquette, politesse, and the full gamut of social norms.
+  Highlight (yellow) - Page 210
+  online, packet delivery is confirmed by what are called acknowledgment packets, or ACKs.
+  Highlight (yellow) - Page 210
+  Behind the scenes of the triple handshake, each machine provides the other with a kind of serial number—and it’s understood that every packet sent after that will increment those serial numbers by one each time, like checks in a checkbook.
+  Highlight (yellow) - Page 214
+  after an initial failure, a sender would randomly retransmit either one or two turns later; after a second failure, it would try again anywhere from one to four turns later; a third failure in a row would mean waiting somewhere between one and eight turns, and so on. This elegant approach allows the network to accommodate potentially any number of competing signals. Since the maximum delay length (2, 4, 8, 16…) forms an exponential progression, it’s become known as Exponential Backoff.
+  Highlight (yellow) - Page 221
+  a poor listener destroys the tale.
+  11. Game Theory: The Minds of Others
+  Highlight (yellow) - Page 231
+  “halting problem.” As Alan Turing proved in 1936, a computer program can never tell you for sure whether another program might end up calculating forever without end—except by simulating the operation of that program and thus potentially going off the deep end itself.
+  Highlight (yellow) - Page 233
+  John Nash proved in 1951 that every two-player game has at least one equilibrium.
+  Highlight (yellow) - Page 242
+  It turns out there’s no Godfather quite like God the Father.
+  Highlight (yellow) - Page 252
+  Named for Nobel Prize–winning economist William Vickrey, the Vickrey auction, just like the first-price auction, is a “sealed bid” auction process. That is, every participant simply writes down a single number in secret, and the highest bidder wins. However, in a Vickrey auction, the winner ends up paying not the amount of their own bid, but that of the second-place bidder.
+  Highlight (yellow) - Page 255
+  If changing strategies doesn’t help, you can try to change the game. And if that’s not possible, you can at least exercise some control about which games you choose to play.
+  Conclusion: Computational Kindness
+  Highlight (yellow) - Page 256
+  If you followed the best possible process, then you’ve done all you can, and you shouldn’t blame yourself if things didn’t go your way.
+  Highlight (yellow) - Page 256
+  Our interviewees were on average more likely to be available when we requested a meeting, say, “next Tuesday between 1:00 and 2:00 p.m. PST” than “at a convenient time this coming week.”
+  Highlight (yellow) - Page 256
+  it seems that people preferred receiving a constrained problem, even if the constraints were plucked out of thin air, than a wide-open one. It was seemingly less difficult for them to accommodate our preferences and constraints than to compute a better option based on their own. Computer scientists would nod knowingly here, citing the complexity gap between “verification” and “search”—which is about as wide as the gap between knowing a good song when you hear it and writing one on the spot.
+  Highlight (yellow) - Page 256
+  One of the implicit principles of computer science, as odd as it may sound, is that computation is bad: the underlying directive of any good algorithm is to minimize the labor of thought.
+  Highlight (yellow) - Page 256
+  We can be “computationally kind” to others by framing issues in terms that make the underlying computational problem easier.
+  Note - Page 256
+  By using simple language to explain difficult concepts.
+  Highlight (yellow) - Page 256
+  seemingly innocuous language like “Oh, I’m flexible” or “What do you want to do tonight?” has a dark computational underbelly that should make you think twice. It has the veneer of kindness about it, but it does two deeply alarming things. First, it passes the cognitive buck: “Here’s a problem, you handle it.” Second, by not stating your preferences, it invites the others to simulate or imagine them. And as we have seen, the simulation of the minds of others is one of the biggest computational challenges a mind (or machine) can ever face.
+  Note - Page 256
+  State your preferences to be kind, but be nice about it. Don't adopt the CS approach where "I'm right"
+  Highlight (yellow) - Page 256
+  politely asserting your preferences (“Personally, I’m inclined toward x. What do you think?”) helps shoulder the cognitive load of moving the group toward resolution.
+  Highlight (yellow) - Page 256
+  Alternatively, you can try to reduce, rather than maximize, the number of options that you give other people—say, offering a choice between two or three restaurants rather than ten. If each person in the group eliminates their least preferred option, that makes the task easier for everyone. And if you’re inviting somebody out to lunch, or scheduling a meeting, offering one or two concrete proposals that they can accept or decline is a good starting point. None of these actions is necessarily “polite,” but all of them can significantly lower the computational cost of interaction.
+  Note - Page 256
+  Like Warren Buffet, people accept if you make it easier for them.
+  Highlight (yellow) - Page 256
+  Architects and urban planners, for instance, have choices about how they construct our environment—which means they have choices about how they will structure the computational problems we have to solve.
+</div>
+<div id="formatted"></div>
+<script src="../book.js"></script>
+</body>
+</html>
