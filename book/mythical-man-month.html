@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Mythical Man Month by Frederick Brooks - Highlights and Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../book.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56608851-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+<div class="controls">
+  <a href="../"><< Back</a>
+</div>
+<div id="raw-notes">
+  Notebook for
+  The Mythical Man-Month, Anniversary Edition: Essays On Software Engineering
+  Brooks Jr., Frederick P.
+  Citation (APA): Brooks Jr., F. P. (1995). The Mythical Man-Month, Anniversary Edition: Essays On Software Engineering [Kindle Android version]. Retrieved from Amazon.com
+  Chapter 1. The Tar Pit
+  Highlight (yellow) - Location 272
+  As a rule of thumb, I estimate that a programming product costs at least three times as much as a debugged program with the same function.
+  Highlight (yellow) - Location 284
+  Why is programming fun? What delights may its practitioner expect as his reward? First is the sheer joy of making things. As the child delights in his mud pie, so the adult enjoys building things, especially things of his own design. I think this delight must be an image of God's delight in making things, a delight shown in the distinctness and newness of each leaf and each snowflake.
+  Highlight (yellow) - Location 287
+  Second is the pleasure of making things that are useful to other people. Deep within, we want others to use our work and to find it helpful. In this respect the programming system is not essentially different from the child's first clay pencil holder "for Daddy's office."
+  Highlight (yellow) - Location 289
+  Third is the fascination of fashioning complex puzzle- like objects of interlocking moving parts and watching them work in subtle cycles, playing out the consequences of principles built in from the beginning. The programmed computer has all the fascination of the pinball machine or the jukebox mechanism, carried to the ultimate.
+  Highlight (yellow) - Location 292
+  Fourth is the joy of always learning, which springs from the nonrepeating nature of the task. In one way or another the problem is ever new, and its solver learns something: sometimes practical, sometimes theoretical, and sometimes both.
+  Highlight (yellow) - Location 293
+  Finally, there is the delight of working in such a tractable medium. The programmer, like the poet, works only slightly removed from pure thought- stuff. He builds his castles in the air, from air, creating by exertion of the imagination. Few media of creation are so flexible, so easy to polish and rework, so readily capable of realizing grand conceptual structures.
+  Highlight (yellow) - Location 297
+  the program construct, unlike the poet's words, is real in the sense that it moves and works, producing visible outputs separate from the construct itself. It prints results, draws pictures, produces sounds, moves arms. The magic of myth and legend has come true in our time. One types the correct incantation on a keyboard, and a display screen comes to life, showing things that never were nor could be.
+  Highlight (yellow) - Location 303
+  The computer resembles the magic of legend in this respect, too. If one character, one pause, of the incantation is not strictly in proper form, the magic doesn't work.
+  Highlight (yellow) - Location 305
+  Adjusting to the requirement for perfection is, I think, the most difficult part of learning to program.[
+  Highlight (yellow) - Location 319
+  The new and better product is generally not available when one completes his own; it is only talked about. It, too, will require months of development. The real tiger is never a match for the paper one, unless actual use is wanted.
+  Highlight (yellow) - Location 324
+  The challenge and the mission are to find real solutions to real problems on actual schedules with available resources.
+  Chapter 2. The Mythical Man-Month
+  Highlight (yellow) - Location 337
+  when schedule slippage is recognized, the natural (and traditional) response is to add manpower. Like dousing a fire with gasoline, this makes matters worse, much worse. More fire requires more gasoline, and thus begins a regenerative cycle which ends in disaster.
+  Highlight (yellow) - Location 344
+  the first false assumption that underlies the scheduling of systems programming is that all will go well, i.e., that each task will take only as long as it "ought" to take.
+  Highlight (yellow) - Location 352
+  For the human makers of things, the incompletenesses and inconsistencies of our ideas become clear only during implementation.
+  Highlight (yellow) - Location 373
+  The bearing of a child takes nine months, no matter how many women are assigned.
+  Highlight (yellow) - Location 384
+  Intercommunication is worse. If each part of the task must be separately coordinated with each other part, the effort increases as n( n– 1)/ 2. Three workers require three times as much pairwise intercommunication as two; four require six times as much as two.
+  Note - Location 386
+  Divide people into cells, with people they click with and like. These cells handle modules that have clear input output. There could be an acquaintance period in which for the first year of work and employee shadows different cells, chooses the ones he likes (and they choose him) and becomes part of that cell. Cells must have a person limit. New cells can be created by collaboration.
+  Highlight (yellow) - Location 414
+  Observe that for the programmer, as for the chef, the urgency of the patron may govern the scheduled completion of the task, but it cannot govern the actual completion. An omelette, promised in two minutes, may appear to be progressing nicely. But when it has not set in two minutes, the customer has two choices— wait or eat it raw. Software customers have had the same choices. The cook has another choice; he can turn up the heat. The result is often an omelette nothing can save— burned in one part, raw in another.
+  Highlight (yellow) - Location 443
+  "Take no small slips." That is, allow enough time in the new schedule to ensure that the work can be carefully and thoroughly done, and that rescheduling will not have to be done again.
+  Highlight (yellow) - Location 465
+  Adding manpower to a late software project makes it later.
+  Chapter 3. The Surgical Team
+  Highlight (yellow) - Location 487
+  The conclusion is simple: if a 200- man project has 25 managers who are the most competent and experienced programmers, fire the 175 troops and put the managers back to programming.
+  Highlight (yellow) - Location 506
+  Mills proposes that each segment of a large job be tackled by a team, but that the team be organized like a surgical team rather than a hog- butchering team. That is, instead of each member cutting away on the problem, one does the cutting and the others give him every support that will enhance his effectiveness and productivity.
+  Note - Location 508
+  This reminds me of DotA, where there are defined roles like carry, support, pusher, etc. And of the saying "too many cooks spoil the broth"
+  Highlight (yellow) - Location 557
+  the system is the product of one mind— or at most two, acting uno animo.
+  Highlight (yellow) - Location 558
+  Notice in particular the differences between a team of two programmers conventionally organized and the surgeon- copilot team. First, in the conventional team the partners divide the work, and each is responsible for design and implementation of part of the work. In the surgical team, the surgeon and copilot are each cognizant of all of the design and all of the code.
+  Chapter 4. Aristocracy, Democracy, and System Design
+  Highlight (yellow) - Location 599
+  I will contend that conceptual integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.
+  Highlight (yellow) - Location 630
+  Conceptual integrity in turn dictates that the design must proceed from one mind, or from a very small number of agreeing resonant minds.
+  Highlight (yellow) - Location 699
+  refrain from hiring implementers until the specifications are complete. This is what is done when a building is constructed.
+  Chapter 5. The Second-System Effect
+  Highlight (yellow) - Location 748
+  This second is the most dangerous system a man ever designs. When he does his third and later ones, his prior experiences will confirm each other as to the general characteristics of such systems, and their differences will identify those parts of his experience that are particular and not generalizable. The general tendency is to over- design the second system, using all the ideas and frills that were cautiously sidetracked on the first one. The result, as Ovid says, is a "big pile."
+  Chapter 6. Passing the Word
+  Highlight (yellow) - Location 808
+  The manual must not only describe everything the user does see, including all interfaces; it must also refrain from describing what the user does not see. That is the implementer's business, and there his design freedom must be unconstrained.
+  Highlight (yellow) - Location 810
+  The architect must always be prepared to show an implementation for any feature he describes, but he must not attempt to dictate the implementation.
+  Highlight (yellow) - Location 811
+  The style must be precise, full, and accurately detailed. A user will often refer to a single definition, so each one must repeat all the essentials and yet all must agree. This tends to make manuals dull reading, but precision is more important than liveliness.
+  Highlight (yellow) - Location 833
+  An ancient adage warns, "Never go to sea with two chronometers; take one or three."
+  Chapter 7. Why Did the Tower of Babel Fail?
+  Bookmark - Location 925
+  Highlight (yellow) - Location 1044
+  Thinkers are rare; doers are rarer; and thinker- doers are rarest.
+  Highlight (yellow) - Location 1055
+  The job done least well by project managers is to utilize the technical genius who is not strong on management talent.
+  Highlight (yellow) - Location 1056
+  The director may be boss, and the producer his right- hand man. Robert Heinlein, in The Man Who Sold the Moon, describes such an arrangement in a graphic for- instance: Coster buried his face in his hands, then looked up. "I know it. I know what needs to be done— but every time I try to tackle a technical problem some bloody fool wants me to make a decision about trucks— or telephones— or some damn thing. I'm sorry, Mr. Harriman. I thought I could do it." Harriman said very gently, "Don't let it throw you, Bob. You haven't had much sleep lately, have you? Tell you what— we'll put over a fast one on Ferguson. I'll take that desk you're at for a few days and build you a set- up to protect you against such things. I want that brain of yours thinking about reaction vectors and fuel efficiencies and design stresses, not about contracts for trucks." Harriman stepped to the door, looked around the outer office and spotted a man who might or might not be the office's chief clerk. "Hey you! C'mere." The man looked startled, got up, came to the door and said, "Yes?" "I want that desk in the corner and all the stuff that's on it moved to an empty office on this floor, right away." He supervised getting Coster and his other desk moved into another office, saw to it that the phone in the new office was disconnected, and, as an afterthought, had a couch moved in there, too. "We'll install a projector, and a drafting machine and bookcases and other junk like that tonight," he told Coster. "Just make a list of anything you need— to work on engineering." He went back to the nominal chief- engineer's office and got happily to work trying to figure where the organization stood and what was wrong with it. Some four hours later he took Berkeley in to meet Coster. The chief engineer was asleep at his desk, head cradled on his arms. Harriman started to back out, but Coster roused. "Oh! Sorry," he said, blushing, "I must have dozed off." "That's why I brought you the couch," said Harriman. "It's more restful. Bob, meet Jock Berkeley. He's your new slave. You remain chief engineer and top, undisputed boss. Jock is Lord High Everything Else. From now on you've got absolute nothing to worry about— except for the little detail of building a Moon ship." They shook hands. "Just one thing I ask, Mr. Coster," Berkeley said seriously, "bypass me all you want to— you'll have to run the technical show— but for God's sake record it so I'll know what's going on. I'm going to have a switch placed on your desk that will operate a sealed recorder at my desk." "Fine!" Coster was looking, Harriman thought, younger already. "And if you want something that is not technical, don't do it yourself. Just flip a switch and whistle; it'll get done!" Berkeley glanced at Harriman. "The Boss says he wants to talk with you about the real job. I'll leave you and get busy." He left. Harriman sat down; Coster followed suit and said, "Whew!" "Feel better?" "I like the looks of that fellow Berkeley." "That's good; he's your twin brother from now on. Stop worrying; I've used him before. You'll think you're living in a well- run hospital."[ 2]
+  Chapter 8. Calling the Shot
+  Highlight (yellow) - Location 1088
+  Experience is a dear teacher, but fools will learn at no other.—POOR RICHARD'S ALMANAC
+  Highlight (yellow) - Location 1091
+  First, one must say that one does not estimate the entire task by estimating the coding portion only and then applying the ratios. The coding is only one- sixth or so of the problem, and errors in its estimate or in the ratios could lead to ridiculous results.
+  Highlight (yellow) - Location 1093
+  Second, one must say that data for building isolated small programs are not applicable to programming systems products. For a program averaging about 3200 words, for example, Sackman, Erikson, and Grant report an average code- plus- debug time of about 178 hours for a single programmer, a figure which would extrapolate to give an annual productivity of 35,800 statements per year. A program half that size took less than one- fourth as long, and extrapolated productivity is almost 80,000 statements per year.[
+  Highlight (yellow) - Location 1097
+  Planning, documentation, testing, system integration, and training times must be added. The linear extrapolation of such sprint figures is meaningless. Extrapolation of times for the hundred- yard dash shows that a man can run a mile in under three minutes.
+  Highlight (yellow) - Location 1099
+  effort goes as a power of size even when no communication is involved except that of a man with his memories.
+  Note - Location 1101
+  It's exponential. The next graph shows time required has an exponent of 1.5 vs the number of lines of code.
+  Highlight (yellow) - Location 1112
+  He found his programming teams missing schedules by about one- half— each job was taking approximately twice as long as estimated. The estimates were very careful, done by experienced teams estimating man- hours for several hundred subtasks on a PERT chart. When the slippage pattern appeared, he asked them to keep careful daily logs of time usage. These showed that the estimating error could be entirely accounted for by the fact that his teams were only realizing 50 percent of the working week as actual programming and debugging time. Machine downtime, higher- priority short unrelated jobs, meetings, paperwork, company business, sickness, personal time, etc. accounted for the rest. In short, the estimates made an unrealistic assumption about the number of technical work hours per man- year.
+  Highlight (yellow) - Location 1163
+  Programming productivity may be increased as much as five times when a suitable high- level language is used.[
+  Chapter 9. Ten Pounds in a Five-Pound Sack
+  Highlight (yellow) - Location 1236
+  Much more often, strategic breakthrough will come from redoing the representation of the data or tables. This is where the heart of a program lies. Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious.
+  Highlight (yellow) - Location 1244
+  The programmer at wit's end for lack of space can often do best by disentangling himself from his code, rearing back, and contemplating his data. Representation is the essence of programming.
+  Chapter 10. The Documentary Hypothesis
+  Highlight (yellow) - Location 1297
+  Conway's Law predicts: "Organizations which design systems are constrained to produce systems which are copies of the communication structures of these organizations."[ 1]
+  Chapter 11. Plan to Throw One Away
+  Highlight (yellow) - Location 1319
+  It is common sense to take a method and try it. If it fails, admit it frankly and try another. But above all, try something.
+  Highlight (yellow) - Location 1345
+  Far be it from me to suggest that all changes in customer objectives and requirements must, can, or should be incorporated in the design. Clearly a threshold has to be established, and it must get higher and higher as development proceeds, or no product ever appears.
+  Highlight (yellow) - Location 1356
+  Quantization of change is an essential technique. Every product should have numbered versions, and each version must have its own schedule and a freeze date, after which changes go into the next version.
+  Highlight (yellow) - Location 1381
+  Whenever talents permit, senior people must be kept technically and emotionally ready to manage groups or to delight in building programs with their own hands. Doing this surely is a lot of work; but it surely is worth it!
+  Chapter 12. Sharp Tools
+  Highlight (yellow) - Location 1431
+  A good workman is known by his tools.
+  Chapter 13. The Whole and the Parts
+  Highlight (yellow) - Location 1602
+  A good top- down design avoids bugs in several ways. First, the clarity of structure and representation makes the precise statement of requirements and functions of the modules easier. Second, the partitioning and independence of modules avoids system bugs. Third, the suppression of detail makes flaws in the structure more apparent. Fourth, the design can be tested at each of its refinement steps, so testing can start earlier and focus on the proper level of detail at each step.
+  Highlight (yellow) - Location 1607
+  Many poor systems come from an attempt to salvage a bad basic design and patch it with all kinds of cosmetic relief.
+  Highlight (yellow) - Location 1679
+  Build plenty of scaffolding. By scaffolding I mean all programs and data built for debugging purposes but never intended to be in the final product. It is not unreasonable for there to be half as much code in scaffolding as there is in product.
+  Chapter 14. Hatching a Catastrophe
+  Highlight (yellow) - Location 1723
+  When one hears of disastrous schedule slippage in a project, he imagines that a series of major calamities must have befallen it. Usually, however, the disaster is due to termites, not tornadoes;
+  Highlight (yellow) - Location 1733
+  For picking the milestones there is only one relevant rule. Milestones must be concrete, specific, measurable events, defined with knife- edge sharpness. Coding, for a counterexample, is "90 percent finished" for half of the total coding time. Debugging is "99 percent complete" most of the time. "Planning complete" is an event one can proclaim almost at will.[ 1]
+  Highlight (yellow) - Location 1736
+  Concrete milestones, on the other hand, are 100- percent events. "Specifications signed by architects and implementers," "source coding 100 percent complete, keypunched, entered into disk library," "debugged version passes all test cases." These concrete milestones demark the vague phases of planning, coding, debugging.
+  Highlight (yellow) - Location 1748
+  Sharp milestones are in fact a service to the team, and one they can properly expect from a manager. The fuzzy milestone is the harder burden to live with. It is in fact a millstone that grinds down morale, for it deceives one about lost time until it is irremediable. And chronic schedule slippage is a morale- killer.
+  Highlight (yellow) - Location 1811
+  The investment of a modest amount of skilled effort in a Plans and Controls function is very rewarding. It makes far more difference in project accomplishment than if these people worked directly on building the product programs. For the Plans and Controls group is the watchdog who renders the imperceptible delays visible and who points up the critical elements. It is the early warning system against losing a year, one day at a time.
+  Chapter 15. The Other Face
+  Highlight (yellow) - Location 1817
+  O give me commentators plain, Who with no deep researchers vex the brain.
+  Highlight (yellow) - Location 1839
+  To write a useful prose description, stand way back and come in slowly:
+  Note - Location 1840
+  Refer to this section of the book for documentation.
+  Chapter 16. No Silver Bullet—Essence and Accident in Software Engineering
+  Highlight (yellow) - Location 1972
+  There is no single development, in either technology or management technique, which by itself promises even one order- of- magnitude improvement within a decade in productivity, in reliability, in simplicity.
+  Highlight (yellow) - Location 1982
+  I suggest:• Exploiting the mass market to avoid constructing what can be bought.• Using rapid prototyping as part of a planned iteration in establishing software requirements.• Growing software organically, adding more and more function to systems as they are run, used, and tested.• Identifying and developing the great conceptual designers of the rising generation.
+  Highlight (yellow) - Location 1993
+  There is no single development, in either technology or management technique, which by itself promises even one order of magnitude improvement in productivity, in reliability, in simplicity.
+  Highlight (yellow) - Location 2015
+  I believe the hard part of building software to be the specification, design, and testing of this conceptual construct, not the labor of representing it and testing the fidelity of the representation. We still make syntax errors, to be sure; but they are fuzz compared to the conceptual errors in most systems.
+  Highlight (yellow) - Location 2025
+  a scaling- up of a software entity is not merely a repetition of the same elements in larger size; it is necessarily an increase in the number of different elements. In most cases, the elements interact with each other in some nonlinear fashion, and the complexity of the whole increases much more than linearly.
+  Highlight (yellow) - Location 2178
+  knowledge acquisition: finding articulate, self- analytical experts who know why they do things; and developing efficient techniques for extracting what they know and distilling it into rule bases. The essential prerequisite for building an expert system is to have an expert.
+  Highlight (yellow) - Location 2249
+  The most radical possible solution for constructing software is not to construct it at all.
+  Highlight (yellow) - Location 2288
+  Complex software systems are, moreover, things that act, that move, that work. The dynamics of that action are hard to imagine. So in planning any software activity, it is necessary to allow for an extensive iteration between the client and the designer as part of the system definition. I would go a step further and assert that it is really impossible for clients, even those working with software engineers, to specify completely, precisely, and correctly the exact requirements of a modern software product before having built and tried some versions of the product they are specifying.
+  Highlight (yellow) - Location 2293
+  one of the most promising of the current technological efforts, and one which attacks the essence, not the accidents, of the software problem, is the development of approaches and tools for rapid prototyping of systems as part of the iterative specification of requirements.
+  Note - Location 2295
+  This might be an excellent approach to try for a consultancy, if not a throwaway prototype then a barebones implementation that can be tweaked later on. Say, flask + html + sqlite. Production/scaling related items will be added last, after UAT and business logic signoff. Can go so far as to just develop on local and use ngrok for live online sessions with clients.
+  Highlight (yellow) - Location 2302
+  Incremental development— grow, not build, software.
+  Note - Location 2303
+  Same notion as spotify's skateboard analogy.
+  Highlight (yellow) - Location 2316
+  The approach necessitates top- down design, for it is a top- down growing of the software. It allows easy backtracking. It lends itself to early prototypes. Each added function and new provision for more complex data or circumstances grows organically out of what is already there.
+  Highlight (yellow) - Location 2329
+  Great designs come from great designers. Software construction is a creative process. Sound methodology can empower and liberate the creative mind; it cannot enflame or inspire the drudge.
+  Note - Location 2331
+  A stark reminder to retry reading Don Norman's Design of Everyday Things
+  Highlight (yellow) - Location 2331
+  The differences are not minor— it is rather like Salieri and Mozart. Study after study shows that the very best designers produce structures that are faster, smaller, simpler, cleaner, and produced with less effort. The differences between the great and the average approach an order of magnitude.
+  Highlight (yellow) - Location 2340
+  Good managers, scarce though they be, are no scarcer than good designers. Great designers and great managers are both very rare.
+  Note - Location 2341
+  This is a startup CEO and why not everyone can be one. Ponder the question if there could be a course which strove to teach management, design and entrepreneurship.
+  Highlight (yellow) - Location 2343
+  My first proposal is that each software organization must determine and proclaim that great designers are as important to its success as great managers are, and that they can be expected to be similarly nurtured and rewarded. Not only salary, but the perquisites of recognition— office size, furnishings, personal technical equipment, travel funds, staff support— must be fully equivalent.
+  Highlight (yellow) - Location 2346
+  How to grow great designers?
+  Note - Location 2346
+  Refer to this section of the book for ways to grow designers in your organization.
+  Chapter 17. "No Silver Bullet" Refined
+  Highlight (yellow) - Location 2536
+  The most dramatic way to improve the productivity of management information systems (MIS) programmers is to go down to your local computer store and buy off the shelf what they would have built.
+  Note - Location 2538
+  Apply this to the modern environment when one can perhaps rely on open source libraries for almost everything and just program in the business logic.
+  Highlight (yellow) - Location 2582
+  "Object- oriented techniques will not make the first project development any faster, or the next one. The fifth one in that family will go blazingly fast."[
+  Note - Location 2583
+  Apply this to good business processes or personal habits. You'll only feel it later on so the best time to start is now.
+  Chapter 18. Propositions of The Mythical Man-Month: True or False?
+  Highlight (yellow) - Location 2665
+  here in outline form is the essence of the 1975 book— assertions I believed to be true: facts and rule- of- thumb- type generalizations from experience— extracted without change of meaning.
+  Note - Location 2667
+  Refer here for a nice summary.
+  Highlight (yellow) - Location 2670
+  A programming systems product takes about nine times as much effort as the component programs written separately for private use. I estimate that productizing imposes a factor of three; and that designing, integrating, and testing components into a coherent system imposes a factor of three; and that these cost components are essentially independent of each other.
+  Highlight (yellow) - Location 2686
+  The programming project converges more slowly the nearer one gets to the end, whereas one expects it to converge faster as one approaches the end.
+  Highlight (yellow) - Location 2690
+  More programming projects have gone awry for lack of calendar time than for all other causes combined.
+  Highlight (yellow) - Location 2695
+  Our estimating techniques, built around cost- accounting, confuse effort and progress. The man- month is a fallacious and dangerous myth, for it implies that men and months are interchangeable.
+  Highlight (yellow) - Location 2697
+  Partitioning a task among multiple people occasions extra communication effort— training and intercommunication.
+  Highlight (yellow) - Location 2699
+  My rule of thumb is 1/ 3 of the schedule for design, 1/ 3 for coding, 1/ 4 for component testing, and 1/ 4 for system testing.
+  Highlight (yellow) - Location 2702
+  Brooks's Law: Adding manpower to a late software project makes it later.
+  Highlight (yellow) - Location 2703
+  Adding people to a software project increases the total effort necessary in three ways: the work and disruption of repartitioning itself, training the new people, and added intercommunication.
+  Highlight (yellow) - Location 2706
+  Very good professional programmers are ten times as productive as poor ones, at same training and two- year experience level. (Sackman, Grant, and Erickson)
+  Note - Location 2708
+  Strive for this or don't get into software development at all.
+  Highlight (yellow) - Location 2709
+  A small sharp team is best— as few minds as possible.
+  Highlight (yellow) - Location 2710
+  A team of two, with one leader, is often the best use of minds.
+  Highlight (yellow) - Location 2711
+  A small sharp team is too slow for really big systems.
+  Highlight (yellow) - Location 2717
+  "Conceptual integrity is the most important consideration in system design."
+  Highlight (yellow) - Location 2720
+  To achieve conceptual integrity, a design must proceed from one mind or a small group of agreeing minds.
+  Highlight (yellow) - Location 2723
+  "If a system is to have conceptual integrity, someone must control the concepts. That is an aristocracy that needs no apology."
+  Highlight (yellow) - Location 2735
+  Deal quietly and privately in such suggestions.• Be ready to forgo credit for suggested improvements.
+  Highlight (yellow) - Location 2737
+  The second is the most dangerous system a person ever designs; the general tendency is to over- design it.
+  Highlight (yellow) - Location 2758
+  "Schedule disaster, functional misfit, and system bugs all arise because the left hand doesn't know what the right hand is doing." Teams drift apart in assumptions.
+  Highlight (yellow) - Location 2760
+  Teams should communicate with one another in as many ways as possible: informally, by regular project meetings with technical briefings, and via a shared formal project workbook. [And by electronic mail.]
+  Highlight (yellow) - Location 2851
+  The project manager's chief daily task is communication, not decision- making; the documents communicate the plans and decisions to the whole team.
+  Highlight (yellow) - Location 2893
+  The total lifetime cost of maintaining a widely used program is typically 40 percent or more of the cost of developing it.
+  Highlight (yellow) - Location 2905
+  All repairs tend to destroy structure, to increase the entropy and disorder of a system. Even the most skillful program maintenance only delays the program's subsidence into unfixable chaos, from which there has to be a ground- up redesign.
+  Highlight (yellow) - Location 2925
+  The tool that saves the most labor in a programming project is probably a text- editing system.
+  Note - Location 2926
+  Maybe an argument to learn vim?
+  Highlight (yellow) - Location 2962
+  It is worthwhile to build lots of debugging scaffolding and test code, perhaps even 50 percent as much as the product being debugged.
+  Note - Location 2963
+  Should learn TDD.
+  Highlight (yellow) - Location 2970
+  Day- by- day schedule slippage is harder to recognize, harder to prevent, and harder to make up than calamities.
+  Highlight (yellow) - Location 2971
+  The first step in controlling a big project on a tight schedule is to have a schedule, made up of milestones and dates for them.
+  Highlight (yellow) - Location 2972
+  Milestones must be concrete, specific, measurable events defined with knife- edge sharpness.
+  Highlight (yellow) - Location 2974
+  A programmer will rarely lie about milestone progress, if the milestone is so sharp he can't deceive himself.
+  Highlight (yellow) - Location 2978
+  Chronic schedule slippage is a morale- killer. [Jim McCarthy of Microsoft says, "If you miss one deadline, make sure you make the next one."[ 2]]
+  Highlight (yellow) - Location 2997
+  For the program product, the other face to the user, the documentation, is fully as important as the face to the machine.
+  Highlight (yellow) - Location 2998
+  Even for the most private of programs, prose documentation is necessary, for memory will fail the user- author.
+  Highlight (yellow) - Location 3003
+  Most documentation fails in giving too little overview. Stand way back and zoom in slowly.
+  Highlight (yellow) - Location 3014
+  To keep documentation maintained, it is crucial that it be incorporated in the source program, rather than kept as a separate document.
+  Chapter 19. The Mythical Man-Month after 20 Years
+  Highlight (yellow) - Location 3082
+  Conceptual integrity is central to product quality. Having a system architect is the most important single step toward conceptual integrity. These principles are by no means limited to software systems, but to the design of any complex construct, whether a computer, an airplane, a Strategic Defense Initiative, a Global Positioning System.
+  Highlight (yellow) - Location 3085
+  After teaching a software engineering laboratory more than 20 times, I came to insist that student teams as small as four people choose a manager and a separate architect. Defining distinct roles in such small teams may be a little extreme, but I have observed it to work well and to contribute to design success even for small teams.
+  Highlight (yellow) - Location 3094
+  The besetting temptation for the architect of a general purpose tool such as a spreadsheet or a word processor is to overload the product with features of marginal utility, at the expense of performance and even of ease of use. The appeal of proposed features is evident at the outset; the performance penalty is evident only as system testing proceeds. The loss of ease of use sneaks up insidiously, as features are added in little increments, and the manuals wax fatter and fatter.[
+  Highlight (yellow) - Location 3098
+  For mass- market products that survive and evolve through many generations, the temptation is especially strong. Millions of customers request hundreds of features; any request is itself evidence that "the market demands it."
+  Note - Location 3100
+  Where do you draw the line between maintaining conceptual integrity (like Apple) and listening to your users?
+  Highlight (yellow) - Location 3107
+  writing down the attributes of the expected user set, including:• Who they are• What they need• What they think they need• What they want
+  Highlight (yellow) - Location 3122
+  write down explicit guesses for the attributes of the user set. It is far better to be explicit and wrong than to be vague.
+</div>
+<div id="formatted"></div>
+<footer>Made with &#10084; by <a href="https://beatobongco.com/UI-Kata/">Beato Bongco</a></footer>
+<script src="../book.js"></script>
+</body>
+</html>
