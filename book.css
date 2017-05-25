@@ -8,6 +8,17 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+.guide {
+  margin-bottom: 50px;
+}
+.guide ul {
+  list-style: none;
+}
+.guide ul li .stars {
+  display: inline-block;
+  text-align: right;
+  width: 45px;
+}
 .entry {
   margin: 10px 0;
 }
