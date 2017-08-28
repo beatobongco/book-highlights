@@ -47,6 +47,8 @@ for (var i = 0; i < text.length; i++) {
   el.appendChild(document.createTextNode(text[i]))
   var wrapper = document.createElement('div')
   wrapper.appendChild(el)
-  wrapper.className = cls
+  if (cls) {
+    wrapper.className = cls
+  }
   document.getElementById('formatted').appendChild(wrapper)
 }
