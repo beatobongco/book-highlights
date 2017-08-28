@@ -8,6 +8,9 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
+.summary {
+  margin: 2.5rem 0;
+}
 .guide {
   margin-bottom: 50px;
 }
