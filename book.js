@@ -79,6 +79,8 @@ var formatNotes = new Promise(function(resolve, reject) {
 formatNotes.then(function() {
   setTimeout(function() {
     var el = document.querySelector('.seek')
-    el.scrollIntoView()
+    if (el) {
+      el.scrollIntoView()
+    }
   }, 100)
 })
