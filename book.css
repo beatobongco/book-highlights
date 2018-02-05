@@ -4,6 +4,9 @@ body {
   margin: 25px auto;
   padding: 0 25px;
 }
+.queryhighlight {
+  background-color: #FFFF00;
+}
 .main-title {
   text-align: center;
   margin-bottom: 50px;
