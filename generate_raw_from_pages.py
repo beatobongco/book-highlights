@@ -1,8 +1,6 @@
 import os
 from bs4 import BeautifulSoup
 
-# TODO: All except raw_notes should be one-liners
-
 def strip_and_one_line(text):
   return ' '.join([x.strip() for x in text.split('\n')]).lstrip().rstrip()
 
