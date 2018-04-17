@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Shoe Dog by Phil Knight - Highlights and Notes</title>
-  <meta name="description" content="TLDR: Nike's journey from scrappy startup to billion-dollar company. Lessons: tell the truth, have faith, let people surprise you, and take chances on ideas and people."/>
-  <meta property="og:description" content="TLDR: Nike's journey from scrappy startup to billion-dollar company. Lessons: tell the truth, have faith, let people surprise you, and take chances on ideas and people." />
-  <meta property="og:image" content="https://beatobongco.com/img/og.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../book.css">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56608851-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
-<div class="controls">
-  <a href="../"><< Back</a>
-</div>
-<div class="summary">
-  <h3>Quick and dirty summary</h3>
-  <p>Nike's journey from scrappy startup to billion-dollar company. Lessons: tell the truth, have faith, let people surprise you, and take chances on ideas and people.</p>
-</div>
-<div id="raw-notes">
+Shoe Dog by Phil Knight
+Nike's journey from scrappy startup to billion-dollar company. Lessons: tell the truth, have faith, let people surprise you, and take chances on ideas and people.
+Nike's journey from scrappy startup to billion-dollar company. Lessons: tell the truth, have faith, let people surprise you, and take chances on ideas and people.
 Notebook for
 Shoe Dog: A Memoir by the Creator of Nike
 Knight, Phil
@@ -85,10 +59,3 @@ Highlight (yellow) - 1972 > Page 382
 I’d like to warn the best of them, the iconoclasts, the innovators, the rebels, that they will always have a bull’s-eye on their backs. The better they get, the bigger the bull’s-eye. It’s not one man’s opinion; it’s a law of nature.
 Highlight (yellow) - 1972 > Page 382
 The harder you work, the better your Tao. And since no one has ever adequately defined Tao, I now try to go regularly to mass. I would tell them: Have faith in yourself, but also have faith in faith. Not faith as others define it. Faith as you define it. Faith as faith defines itself in your heart.
-</div>
-<div id="formatted"></div>
-<footer>Made with &#10084; by <a href="https://beatobongco.com/UI-Kata/">Beato Bongco</a></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-<script src="../book.js"></script>
-</body>
-</html>

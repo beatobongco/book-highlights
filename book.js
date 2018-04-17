@@ -7,6 +7,7 @@ var isTitle = false
 var isHighlight = false
 var isNote = false
 var isAuthor = false
+var citation = null
 
 var searchQuery = Arg('highlight')
 
@@ -41,6 +42,7 @@ var formatNotes = new Promise(function(resolve, reject) {
     } else if (_text.indexOf('Citation (APA)') === 0) {
       cls = 'citation'
       elType = 'small'
+      citation = _text
     } else if (_text.indexOf('Note -') === 0) {
       isNote = true
       cls = 'note'
@@ -61,7 +63,6 @@ var formatNotes = new Promise(function(resolve, reject) {
       el.innerHTML = newText
       // set query to null so we wont seek and highlight others
       searchQuery = null
-
     } else {
       el.appendChild(document.createTextNode(text[i]))
     }
@@ -70,6 +71,14 @@ var formatNotes = new Promise(function(resolve, reject) {
     wrapper.appendChild(el)
     if (cls) {
       wrapper.className = cls
+    }
+    // add clipboard data to blockquote
+    if (cls === 'quote') {
+      var copyBtn = document.createElement('button')
+      copyBtn.className = 'copy-btn'
+      copyBtn.innerHTML = 'copy'
+      copyBtn.setAttribute('data-clipboard-text', _text + '\n\n' + citation)
+      wrapper.appendChild(copyBtn)
     }
     document.getElementById('formatted').appendChild(wrapper)
   }
@@ -83,4 +92,15 @@ formatNotes.then(function() {
       el.scrollIntoView()
     }
   }, 100)
+})
+
+var clipboard = new ClipboardJS('.copy-btn')
+
+clipboard.on('success', function(e) {
+  e.trigger.innerHTML = 'copied!'
+  e.trigger.disabled = true
+  setTimeout(function() {
+    e.trigger.innerHTML = 'copy'
+    e.trigger.disabled = false
+  }, 2000)
 })

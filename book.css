@@ -38,10 +38,28 @@ body {
 .note {
   margin: 10px 0;
 }
+.quote {
+  margin: 1.5em 10px;
+}
+.copy-btn {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 0;
+  color: #7f8c8d;
+  text-decoration: underline;
+  padding: 3px 8px;
+}
+.copy-btn:disabled {
+  cursor: auto;
+  text-decoration: none;
+}
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  margin: 0;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }

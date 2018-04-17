@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Chaos Monkeys by Antonio Garcia Martinez - Highlights and Notes</title>
-  <meta name="description" content="TLDR: An account of how life was as a player in Silicon Valley - from startup to working for one of the big fish. It's not a meritocracy. There's a lot of weath inequality, politicking, and dumb luck involved with success."/>
-  <meta property="og:description" content="TLDR: An account of how life was as a player in Silicon Valley - from startup to working for one of the big fish. It's not a meritocracy. There's a lot of weath inequality, politicking, and dumb luck involved with success." />
-  <meta property="og:image" content="https://beatobongco.com/img/og.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../book.css">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-56608851-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-</head>
-<body>
-<div class="controls">
-  <a href="../"><< Back</a>
-</div>
-<div class="summary">
-  <h3>Quick and dirty summary</h3>
-  <p>An account of how life was as a player in Silicon Valley - from startup to working for one of the big fish. It's not a meritocracy. There's a lot of weath inequality, politicking, and dumb luck involved with success. Garcia is an exemplar of the smooth-talking, deal-making (and breaking), agenda-pushing but also deeply inspired hustler. Though things don't work out exactly as planned, one could take some pages from his book on how to be a man of action and passion, not merely one to be content with "resting and vesting".</p>
-</div>
-<div id="raw-notes">
+Chaos Monkeys by Antonio Garcia Martinez
+An account of how life was as a player in Silicon Valley - from startup to working for one of the big fish. It's not a meritocracy. There's a lot of weath inequality, politicking, and dumb luck involved with success. Garcia is an exemplar of the smooth-talking, deal-making (and breaking), agenda-pushing but also deeply inspired hustler. Though things don't work out exactly as planned, one could take some pages from his book on how to be a man of action and passion, not merely one to be content with "resting and vesting".
+An account of how life was as a player in Silicon Valley - from startup to working for one of the big fish. It's not a meritocracy. There's a lot of weath inequality, politicking, and dumb luck involved with success.
 Notebook for
 Chaos Monkeys: Obscene Fortune and Random Failure in Silicon Valley
 Martinez, Antonio Garcia
@@ -174,10 +148,3 @@ Always show enough skin to get a second date. If in doubt, show more.
 Epilogue: Man Plans and God Laughs
 Highlight (yellow) - Pandemonium Lost > Page 496
 Theodor Herzl, “If you will it, it is no dream; and if you do not will it, a dream it will remain.”
-</div>
-<div id="formatted"></div>
-<footer>Made with &#10084; by <a href="https://beatobongco.com/UI-Kata/">Beato Bongco</a></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
-<script src="../book.js"></script>
-</body>
-</html>
