@@ -36,3 +36,9 @@ For now, you'll have to manually design and generate your index page. However, i
 ## Theming
 
 Just change up `book.css` and you're good to go!
+
+## Integration with search
+
+You can add the url argument `?highlight=[YOUR QUERY]` to highlight the first instance of that query and scroll to it.
+
+Live example: https://beatobongco.com/book-highlights/book/a-mind-at-play?highlight=genius
