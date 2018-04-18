@@ -22,8 +22,9 @@ e.g. `a-mind-at-play` -> (run script) -> `a-mind-at-play.html` -> on github page
 
 The following format is subject to change, but for now files are parsed by line number.
 
+```
 Line 1: Title
 Line 2: Summary (appears after title)
 Line 3: Short summary (appears as meta description and opengraph description)
 Line 4+: The actual output of your Kindle Reader export
-
+```
