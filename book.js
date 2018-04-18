@@ -73,7 +73,7 @@ var formatNotes = new Promise(function(resolve, reject) {
       wrapper.className = cls
     }
     // add clipboard data to blockquote
-    if (cls === 'quote') {
+    if (cls.indexOf('quote') > -1) {
       var copyBtn = document.createElement('button')
       copyBtn.className = 'copy-btn'
       copyBtn.innerHTML = 'copy'
