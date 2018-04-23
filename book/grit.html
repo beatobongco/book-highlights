@@ -73,9 +73,44 @@ In our family, we live by the Hard Thing Rule. It has three parts. The first is 
 Highlight (yellow) - Chapter 12: A Culture of Grit > Page 261
 I have learned that if you create a vision for yourself and stick with it, you can make amazing things happen in your life. My experience is that once you have done the work to create the clear vision , it is the discipline and effort to maintain that vision that can make it all come true. The two go hand in hand. The moment you’ve created that vision, you’re on your way, but it’s the diligence with which you stick to that vision that allows you to get there.
 </div>
-<div id="formatted"></div>
+
+<div id="formatted">
+  <div v-for="line in output">
+    <h3 v-if="line.type === 'title-bearer'">{{line.content}}</h3>
+    <h1 v-else-if="line.type === 'title'">{{line.content}}</h1>
+    <small
+      :class="line.type"
+      v-else-if="line.type === 'citation' || line.type === 'note-bearer' || line.type === 'highlight-bearer'"
+      >{{line.content}}</small>
+    <blockquote
+      :class="{quote: true, seek: line.seek}"
+      v-else-if="line.type === 'highlight'"
+      v-html="line.content"
+      ></blockquote>
+    <div
+      :class="{note: true, seek: line.seek}"
+      v-else-if="line.type === 'note'"
+      v-html="line.content"
+      >{{line.content}}</div>
+    <h3 v-else>{{line.content}}</h3>
+
+    <div
+      class="copy-controls"
+      v-if="line.type === 'highlight' || line.type === 'note'">
+      <button
+        class="copy-btn"
+        :data-clipboard-text="line.content">copy</button>
+      <button
+        v-if="line.type === 'highlight'"
+        class="copy-btn"
+        :data-clipboard-text="line.content + '\n\n' + citation">copy w/ citation</button>
+    </div>
+  </div>
+</div>
+
 <footer>Made with &#10084; by <a href="https://beatobongco.com/UI-Kata/">Beato Bongco</a></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
 <script src="../book.js"></script>
 </body>
 </html>

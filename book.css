@@ -41,11 +41,13 @@ body {
 .quote {
   margin: 1.5em 10px;
 }
+.copy-controls {
+  margin-right: 1rem;
+  text-align: right;
+}
 .copy-btn {
   cursor: pointer;
-  display: block;
-  margin-left: auto;
-  margin-right: 1rem;
+  display: inline-block;
   background-color: transparent;
   border: 0;
   color: #7f8c8d;
