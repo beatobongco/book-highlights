@@ -8,7 +8,7 @@ For now, however, these instructions will suffice.
 
 0. Clone this repo
 1. Remove contents of `raw_notes` and `book` folders
-1. `pip install requirements.txt`
+1. `pip install -r requirements.txt`
 2. Dump your Kindle notes in the `raw_notes` folder. See [file format](#file-format)
 3. Run `python generate_pages.py`
 4. Push
