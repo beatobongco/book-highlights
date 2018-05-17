@@ -75,7 +75,7 @@ I have learned that if you create a vision for yourself and stick with it, you c
 </div>
 
 <div id="formatted">
-  <div v-for="line in output">
+  <div v-cloak v-for="line in output">
     <h3 v-if="line.type === 'title-bearer'">{{line.content}}</h3>
     <h1 v-else-if="line.type === 'title'">{{line.content}}</h1>
     <small

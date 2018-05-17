@@ -1,3 +1,6 @@
+[v-cloak] {
+  display: none;
+}
 body {
   font-family: 'Droid Serif', serif;
   max-width: 800px;
