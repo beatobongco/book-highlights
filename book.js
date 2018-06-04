@@ -54,7 +54,7 @@ var app = new Vue({
         }
         let tempOutput = {type: type, content: content}
 
-        if (content.indexOf(initialHighlight) > -1 &&
+        if (initialHighlight && content.indexOf(initialHighlight) > -1 &&
             (type === 'highlight' || type === 'note')) {
           tempOutput['seek'] = true
           tempOutput.content = tempOutput.content.replace(initialHighlight,
